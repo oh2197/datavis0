@@ -1,7 +1,7 @@
 /*AUTHOR: oh2197 
 CITATIONS: Along with the p5.js reference page, I also recieved help from example 1 and example 3 provided to us. */ 
 
-
+//these variables were given via example 1
 var xPos = 20; // starting x position to draw
 var yPos = 20;  // starting y position to draw
 var barHeight = 180; // height of each bar
@@ -14,7 +14,7 @@ var barMargin = 10; // space between each bar
 var barMax = 225; // maximum width of each bar <-
 
 
-
+//example 3
 var hour_xs = [], hour_ys = [];
 var sec_xs = [], sec_ys = [];
 
@@ -23,6 +23,7 @@ const X_AXIS = 2;
 let b1, b2, c1, c2;
 
 function setup() {
+	printMinute();
 	createCanvas(800,600); // make an HTML canvas element width x height pixels	
 	b1 = color(255);
 	b2 = color(0);
@@ -194,4 +195,6 @@ function drawLine(x, y, k){
     line(x, y, x*100 + 50,  y* 100 + 50 );
   }
 }
-
+function printMinute(){
+  console.log(minute());
+}
