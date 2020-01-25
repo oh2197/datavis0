@@ -106,8 +106,8 @@ fill(255,255,128);
   fill(125,56,125);
   stroke(250,197,221,244);
   strokeWeight(3);
-  var min_bound = map(minute(), 0, 59, PI+.01, TWO_PI);
-  arc(200,200,300,300, PI, min_bound, PIE);
+  var m = map(minute(), 0, 59, PI+.01, TWO_PI);
+  arc(200,200,300,300, PI, m, PIE);
   pop();
   
   var h = map(hour(), 0, 24, 0, barMax); // Map the function hour() to values from 0 - barMax
