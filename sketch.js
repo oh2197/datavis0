@@ -24,6 +24,7 @@ let b1, b2, c1, c2;
 
 function setup() {
 	printMinute();
+	setInterval(printMinute, 60000);
 	createCanvas(800,600); // make an HTML canvas element width x height pixels	
 	b1 = color(255);
 	b2 = color(0);
