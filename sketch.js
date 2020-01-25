@@ -185,7 +185,7 @@ function drawLine(x, y, k){
   if (k == 1){  
     stroke(0,181,0);
     strokeWeight(10);
-    point(x, y, x*100 + 50,  y* 100 + 50 );
+    point(x*100 + 50,  y* 100 + 50);
     strokeWeight(2);
     line(x, y, (x-10), y -5);
     line(x, y, x + 10, y -5);
